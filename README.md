@@ -61,3 +61,7 @@ What's the average b2b salary for Remote vs In person/mix employment in PLN curr
 | remote           |         19142 |         14712 |
 
 
+## Dataset
+The data for this analysis was sourced from the Polish IT Job Board Data from 2022 dataset on Kaggle [Polish IT Job Board Data from 2022](https://www.kaggle.com/datasets/kriegsmaschine/polish-it-job-board-data-from-2022)
+Author: Kriegsmaschine
+
