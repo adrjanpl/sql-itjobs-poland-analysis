@@ -17,6 +17,12 @@ While the underlying database is pretty simple, it serves a practical purpose of
 4. SQL Analytics: The `sqlitjobs.sql` file contains analytical SQL queries designed to extract insights and answer business questions regarding the Polish IT job market.
 5. Python-SQL Integration & Data Visualization: In the `pythonitjobs.ipynb` notebook, an engine was established using sqlalchemy to bridge the PostgreSQL database with Python, enabling automated query execution and data visualization.
 
+## Instruction
+1. Download the dataset from the Kaggle link [Polish IT Job Board Data from 2022](https://www.kaggle.com/datasets/kriegsmaschine/polish-it-job-board-data-from-2022).
+2. Use `dataprocess.ipynb` file to process your dataset. Change the dataset name as it is on your device.
+3. With `tablecreation.sql` file you create and import the dataset into your PostgreSQL.
+4. `sqlitjobs.sql` and `pythonitjobs.ipynb` files are for the analysis. In python file change the first variable `engine` to your database password and name.
+5. Ready to use!
 
 ## Key Insights
 What were the most required skills in IT job postings?
