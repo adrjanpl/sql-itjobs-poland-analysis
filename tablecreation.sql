@@ -1,0 +1,40 @@
+CREATE TABLE itjobs (
+    Title TEXT,
+    City TEXT,
+    Country_code TEXT,
+    Marker_icon TEXT,
+    Workplace_type TEXT,
+    Experience_level TEXT,
+    Published_at TIMESTAMP,
+    Remote_interview BOOLEAN,
+    Remote BOOLEAN,
+    Company_size_from INT,
+    Company_size_to INT,
+    if_permanent BOOLEAN,
+    salary_from_permanent NUMERIC,
+    salary_to_permanent NUMERIC,
+    salary_currency_permanent VARCHAR(10),
+    if_b2b BOOLEAN,
+    salary_from_b2b NUMERIC,
+    salary_to_b2b NUMERIC,
+    salary_currency_b2b VARCHAR(10),
+    if_mandate BOOLEAN,
+    salary_from_mandate NUMERIC,
+    salary_to_mandate NUMERIC,
+    salary_currency_mandate VARCHAR(10),
+    if_other BOOLEAN,
+    salary_from_other NUMERIC,
+    salary_to_other NUMERIC,
+    salary_currency_other VARCHAR(10),
+    currency_exchange_rate NUMERIC,
+    skills_name_0 TEXT,
+    skills_value_0 INT,
+    skills_name_1 TEXT,
+    skills_value_1 INT,
+    skills_name_2 TEXT,
+    skills_value_2 INT
+);
+
+COPY itjobs 
+FROM '.../itjobs.csv' 
+WITH (FORMAT csv, HEADER true, DELIMITER ',');
