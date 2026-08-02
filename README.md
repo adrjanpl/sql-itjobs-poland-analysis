@@ -3,7 +3,7 @@
 ## About The Project
 To combine my job search with my passion for data I decided to build this project and answer some questions about IT jobs market in Poland (and more). 
 
-While the underlying database is relatively simple, it serves a very practical purpose: answering real-world questions I had about the current landscape of the Polish IT job market. By analyzing recent job postings, I wanted to discover which technologies are worth learning, how salaries differ based on the contract type, and where the most lucrative opportunities are located.
+While the underlying database is pretty simple, it serves a practical purpose of answering real-world questions I had about the current landscape of the Polish IT job market. By analyzing recent job postings I wanted to discover which technologies are worth learning, how salaries differ based on the contract type, or where the most lucrative opportunities are located.
 
 ## Built With
 * **Database:** PostgreSQL
@@ -17,13 +17,37 @@ While the underlying database is relatively simple, it serves a very practical p
 4. SQL Analytics: The `sqlitjobs.sql` file contains analytical SQL queries designed to extract insights and answer business questions regarding the Polish IT job market.
 5. Python-SQL Integration & Data Visualization: In the `pythonitjobs.ipynb` notebook, an engine was established using sqlalchemy to bridge the PostgreSQL database with Python, enabling automated query execution and data visualization.
 
+
 ## Key Insights
 What were the most required skills in IT job postings?
 
+* <img width="2703" height="1589" alt="skille" src="https://github.com/user-attachments/assets/11f2d8da-7cc9-408b-8170-4ec4da16a9bc" />
+
 A significant portion of job postings did not list explicit skills. Among those that did, Java and JavaScript dominated the Polish IT sector followed by English, SQL, and Python.
 
+What countries are the job listings from (Limited to top 5)?
+| country_code   |   total_offers |
+|:---------------|---------------:|
+| PL             |          35940 |
+| US             |            308 |
+| DE             |            223 |
+| GB             |            180 |
+| NL             |             74 |
 
-What were the average salaries across different countries for B2B vs. Permanent employment contracts?
+As we can see most of them are from Poland.
+
+What were the average salaries across different countries for B2B vs Permanent employment contracts?
+
+* <img width="3080" height="1699" alt="salaries_by_country" src="https://github.com/user-attachments/assets/39df2c3a-0c7f-4eb6-8a14-1588d034436d" />
 
 Note: The vast majority of job postings originated from Poland, with salary figures normalized in PLN currency.
 The best paid position were listed for countries like Norway, Bulgaria and Finland
+
+What is the count of remote jobs for every Experience level?
+| experience_level   |   remote_jobs_count |
+|:-------------------|--------------------:|
+| mid                |               12872 |
+| senior             |                9309 |
+| junior             |                2019 |
+
+With this conclusion we can determine that being Mid in experience level gives you the most remote jobs.
