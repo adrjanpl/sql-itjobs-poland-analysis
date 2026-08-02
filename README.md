@@ -26,6 +26,7 @@ What were the most required skills in IT job postings?
 A significant portion of job postings did not list explicit skills. Among those that did, Java and JavaScript dominated the Polish IT sector followed by English, SQL, and Python.
 
 What countries are the job listings from (Limited to top 5)?
+
 | country_code   |   total_offers |
 |:---------------|---------------:|
 | PL             |          35940 |
@@ -40,10 +41,10 @@ What were the average salaries across different countries for B2B vs Permanent e
 
 * <img width="3080" height="1699" alt="salaries_by_country" src="https://github.com/user-attachments/assets/39df2c3a-0c7f-4eb6-8a14-1588d034436d" />
 
-Note: The vast majority of job postings originated from Poland, with salary figures normalized in PLN currency.
 The best paid position were listed for countries like Norway, Bulgaria and Finland
 
 What is the count of remote jobs for every Experience level?
+
 | experience_level   |   remote_jobs_count |
 |:-------------------|--------------------:|
 | mid                |               12872 |
@@ -51,3 +52,12 @@ What is the count of remote jobs for every Experience level?
 | junior             |                2019 |
 
 With this conclusion we can determine that being Mid in experience level gives you the most remote jobs.
+
+What's the average b2b salary for Remote vs In person/mix employment in PLN currency?
+
+| work_model       |   avg_b2b_pln |   offer_count |
+|:-----------------|--------------:|--------------:|
+| in person or mix |         16113 |          3915 |
+| remote           |         19142 |         14712 |
+
+
